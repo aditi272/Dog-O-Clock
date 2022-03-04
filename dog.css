@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: Bungee;
+}
+body {
+  background-color: #f39189;
+}
+h1 {
+  font-family: Bungee Shade;
+
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+}
+p {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+h3 {
+  font-size: 2.5rem;
+}
+div.timer {
+  display: block;
+  text-align: center;
+  padding: auto;
+}
+div.images {
+  display: flex;
+  justify-content: center;
+}
