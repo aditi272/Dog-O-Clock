@@ -25,15 +25,20 @@ const currentTime = setInterval(()=>{
       document.querySelector(".pics").src =
         "https://i.pinimg.com/originals/56/2f/a9/562fa9687cff0023c3fd4f868916d55c.jpg";
     } 
-  else  {
+  else if(6<= hour && hour < 12 ) {
       meridian = `AM`;
       document.querySelector(".pics").src =
         "https://i.pinimg.com/originals/3f/0f/e1/3f0fe1df1c1443e9561833c8771d5c14.png";
     }
+      else{
+                  document.querySelector(
+      ".tick"
+    ).textContent  =  "Come Later!";
+      }
   
   
        document.querySelector(
       ".tick"
-    ).textContent  =  `${hour}:${min}:${sec} ${meridian} on ${date}`;
+    ).textContent  =  `${hour}:${min}:${sec} ${meridian} `;
         },1000);
         
